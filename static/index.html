@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Helloworld</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script defer src="script.js"></script>
+	<style>
+		.block {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<p>hello world</p>
+
+	<h1>Calculating a op b = ?</h1>
+
+	<form id="theForm">
+		<label class="block">Argument <var>a</var>: <input type="number" name="a" required /></label>
+		<label class="block">Argument <var>b</var>: <input type="number" name="b" required /></label>
+
+		<fieldset class="block">
+			<legend>Operator <var>op</var></legend>
+
+			<label><input type="radio" name="op" value="add" required checked />+</label>
+			<label><input type="radio" name="op" value="sub" required />-</label>
+		</fieldset>
+
+		<output class="block" id="expressionOutput"></output>
+
+		<label class="block">
+			Result:
+			<span class="block" style="font-size: large" id="resultOutput"></span>
+		</label>
+
+		<input type="submit" class="block" value="Calculate" />
+	</form>
+</body>
+
+</html>
